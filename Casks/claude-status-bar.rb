@@ -10,6 +10,11 @@ cask "claude-status-bar" do
   app "Claude Usage Monitor.app"
   binary "#{appdir}/Claude Usage Monitor.app/Contents/Resources/bin/claude-status-bar"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-rd", "com.apple.quarantine", "#{appdir}/Claude Usage Monitor.app"]
+  end
+
   zap trash: [
     "~/.claude-usage-monitor",
   ]
