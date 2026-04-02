@@ -1,6 +1,6 @@
 cask "claude-status-bar" do
   version "1.1.0"
-  sha256 "248eb032d005989baa35c33c12a3b77754bb50c5f9869942c0ca452bc9bbd171"
+  sha256 "e9e4c29422409a5c319d64a3338e1f17e0bf01113696844a9ce7544d64cc658d"
 
   url "https://github.com/837477/claude-status-bar/releases/download/v#{version}/ClaudeUsageMonitor.dmg"
   name "Claude Usage Monitor"
