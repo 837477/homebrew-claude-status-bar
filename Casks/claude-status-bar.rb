@@ -1,6 +1,6 @@
 cask "claude-status-bar" do
-  version "1.0.0"
-  sha256 "094a3b6ef144913457063c32bb248d4f248a646e7e8d3abe7a54cfc08178edc8"
+  version "1.1.0"
+  sha256 "2791d5e0f76fff3c94851d74372e6ad841904ba2dfb6f97ce9efe0d2900c5b43"
 
   url "https://github.com/837477/claude-status-bar/releases/download/v#{version}/ClaudeUsageMonitor.dmg"
   name "Claude Usage Monitor"
@@ -8,6 +8,7 @@ cask "claude-status-bar" do
   homepage "https://github.com/837477/claude-status-bar"
 
   app "Claude Usage Monitor.app"
+  binary "#{appdir}/Claude Usage Monitor.app/Contents/Resources/bin/claude-status-bar"
 
   zap trash: [
     "~/.claude-usage-monitor",
